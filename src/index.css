@@ -1,20 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Just+Another+Hand&family=Londrina+Shadow&display=swap');
 @import "tailwindcss";
 
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  --background-color:#F7A5A5;
+}
+
+.londrina-shadow-regular {
+  font-family: "Londrina Shadow", sans-serif;
   font-weight: 400;
+  font-style: normal;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+.just-another-hand-regular {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+@layer components {
+  .h1_secondary {
+    @apply 
+    text-2xl font-medium;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .h2_secondary {
+    @apply 
+    text-xl font-semibold;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .neutral-500{
+    color: #3A3D46;
+  }
 }
 
 body {
   min-height: 100vh;
+  background-color: var(--background-color) ;
 }
