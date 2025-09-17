@@ -1,7 +1,7 @@
 # Quiz Master
-# Languages Used
+### Languages Used
 HTML,CSS,Javascript,ReactJS
-# Frameworks and Libraries
+### Frameworks and Libraries
 Tailwind Css, Material UI, Redux Toolkit, Axios
-# Api used
+### Api used
 Open TRIVIA DataBase- https://opentdb.com/api_config.php
