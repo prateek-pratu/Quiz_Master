@@ -1,31 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100..900&family=Just+Another+Hand&family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Bagel+Fat+One&family=Barrio&family=Bree+Serif&family=Cabin+Sketch&family=Hanken+Grotesk:wght@100..900&family=Just+Another+Hand&family=Kranky&family=Londrina+Shadow&display=swap');
 @import "tailwindcss";
 
 
 :root {
-  --background-color:#F7A5A5;
+  --background-color:#F7A5A5;  
 }
 
-.londrina-shadow-regular {
-  font-family: "Londrina Shadow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.just-another-hand-regular {
-  font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.hanken-grotesk {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
-}
 
 @layer components {
+  .h1_main{
+    @apply
+    text-2xl font-normal;
+    font-family: "Bree Serif", serif;
+    font-style: normal;
+  }
+  .h2_main{
+    @apply
+    text-xl font-normal;
+    font-family: "Bree Serif", serif;
+    font-style: normal;
+  }
+  .h3_main{
+    @apply
+    text-lg font-normal;
+    font-family: "Bree Serif", serif;
+    font-style: normal;
+  }
+  .h4_main{
+    @apply
+    text-base font-normal;
+    font-family: "Bree Serif", serif;
+    font-style: normal;
+  }
+  .p_main{
+    @apply
+    text-sm font-normal;
+    font-family: "Bree Serif", serif;
+    font-style: normal;
+  }
   .h1_secondary {
     @apply 
     text-2xl font-medium;
@@ -40,9 +52,79 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-  .neutral-500{
-    color: #3A3D46;
+  .h3_secondary {
+    @apply 
+    text-lg font-semibold;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }.h4_secondary {
+    @apply 
+    text-base font-medium;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }.p_secondary {
+    @apply 
+    text-sm font-semibold;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
+  .list-1{
+    @apply
+    text-3xl font-bold;
+    font-family: "Anonymous Pro", monospace;
+    font-style: normal;
+  }
+  .list-2{
+    @apply
+    text-3xl font-normal;
+    font-family: "Bagel Fat One", system-ui;
+    font-style: normal;
+  }
+  .list-3{
+    @apply
+    text-3xl font-normal;
+    font-family: "Barrio", system-ui;
+    font-style: normal;
+  }
+  .list-4{
+     @apply
+    text-3xl font-normal;
+    font-family: "Cabin Sketch", sans-serif;
+    font-style: normal;
+
+  }
+  .list-5{
+    @apply
+    text-3xl font-normal;
+    font-family: "Kranky", serif;
+    font-style: normal;
+  }
+
+  .primary-900{color:#E39898;}
+  .primary-500{color:#F7A5A5;}
+  .primary-100{color:#F6C2C2;}
+  
+  .secondary-900{color:#F4D1AE;}
+  .secondary-500{color:#FFDBB6;}
+  .secondary-100{color:#FCE2C7;}
+
+  .accent1-900{color:#4B536E;}
+  .accent1-500{color:#5D688A;}
+  .accent1-100{color:#747D9A;}
+
+  .accent2-900{color:#FFE3DD;}
+  .accent2-500{color:#FFEDE9;}
+  .accent2-100{color:#FFF3F0;}
+
+  .neutral-100{color:#FFFBFA;}
+  .neutral-200{color:#FFD8CF;}
+  .neutral-300{color:#D7E0FF;}
+  .neutral-400{color:#5D6E9F;}
+  .neutral-500{color:#3A3D46;}
+
 }
 
 body {
