@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../components/pages/Home"
-import InstructionsCategory from "../components/pages/InstructionsCatgory"
-import Quiz from "../components/pages/Quiz"
-import Summary from "../components/pages/Summary"
-import Results from "../components/pages/Results"
-import Thankyou from "../components/pages/Thankyou"
+import Home from "@/components/pages/home"
+import InstructionsCategory from "@/components/pages/instructions"
+import Quiz from "@/components/pages/quiz"
+import Summary from "@/components/pages/summary"
+import Results from "@/components/pages/results"
+import Thankyou from "@/components/pages/thankyou"
 
 const router = createBrowserRouter([
   { 
