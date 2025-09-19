@@ -1,15 +1,28 @@
 import { TextField } from "@mui/material"
-import Logo from "../../assets/Logo.svg"
+import Logo from "@/assets/Logo.svg"
 import {Button} from "@mui/material"
 import { useState } from "react"
+import { useDispatch,useSelector } from "react-redux"
+import { addName } from "../../../store/feature/nameSlice"
+import { store } from "../../../store/store"
+import { useNavigate } from "react-router-dom"
 
 
 const Home = () => {
   const[name,setName]=useState("")
+  const dispatch=useDispatch()
+  const storedName = useSelector((state) => state.name.name);
+console.log(storedName)
+const navigate=useNavigate()
 
   const handleButtonClick=()=>{
-    alert(name)
-    setName("")
+    // alert(name)
+    dispatch(addName(name))
+    console.log(store.getState(),"sname")
+    // setName("")
+    setTimeout(()=>{
+      navigate("/instructions")
+    },2000)
   }
 
  const handleInputChange=(e)=>{
