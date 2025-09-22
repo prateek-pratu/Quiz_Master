@@ -1,0 +1,8 @@
+<div style="display:none;">
+    <div id="certificate" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+        <h2>Congratulations</h2>
+        <h2 id="name">Name</h2>
+        <h4>on Completion of <span id="course">Course Name</span></h4>
+        <p style="align-self:end;">Completed on <span id="date"> Date</span></p>
+     </div>
+     </div>
