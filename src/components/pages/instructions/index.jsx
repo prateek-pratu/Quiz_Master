@@ -19,7 +19,7 @@ const array=["Matehmetics","Sports","GK","Science"]
     setShowCategory(true)
   }
   return (
-    <div className='w-full px-3 pt-1 pb-5'>
+    <div className='w-[100vw] px-3 pt-1 pb-5'>
       <Logo/>
       <div className='flex flex-col items-center gap-2'>
         <h2 className='h2_secondary text-center text-neutral-500'>Hi, {name}</h2>
@@ -39,9 +39,9 @@ const array=["Matehmetics","Sports","GK","Science"]
         :
           <>
             <h1 className='h1_secondary text-neutral-500'>Quiz Instructions</h1>
-            <ol className='list-decimal w-[85%] text-neutral-500'>
+            <ol className='p_main text-lg list-decimal w-[85%] text-neutral-500'>
               {Object.keys(instructions).map(key=>{
-              return <li className='p_main text-lg'>{instructions[key]}</li>
+              return <li>{instructions[key]}</li>
               })}
             </ol>
               <label
