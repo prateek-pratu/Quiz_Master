@@ -12,17 +12,15 @@ const Home = () => {
   const[name,setName]=useState("")
   const dispatch=useDispatch()
   const storedName = useSelector((state) => state.name.name);
-console.log(storedName)
 const navigate=useNavigate()
 
   const handleButtonClick=()=>{
     // alert(name)
     dispatch(addName(name))
-    console.log(store.getState(),"sname")
-    // setName("")
+    setName("")
     setTimeout(()=>{
       navigate("/instructions")
-    },2000)
+    },1000)
   }
 
  const handleInputChange=(e)=>{
