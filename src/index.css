@@ -32,25 +32,25 @@
 }
 
 @layer components {
-  :h1_main{
+  .h1_main{
     @apply
     text-2xl font-normal;
     font-family: "Bree Serif", serif;
     font-style: normal;
   }
-  :h2_main{
+  .h2_main{
     @apply
     text-xl font-normal;
     font-family: "Bree Serif", serif;
     font-style: normal;
   }
-  :h3_main{
+  .h3_main{
     @apply
     text-lg font-normal;
     font-family: "Bree Serif", serif;
     font-style: normal;
   }
-  :h4_main{
+  .h4_main{
     @apply
     text-base font-normal;
     font-family: "Bree Serif", serif;
@@ -62,27 +62,27 @@
     font-family: "Bree Serif", serif;
     font-style: normal;
   }
-  :h1_secondary {
+  .h1_secondary {
     @apply 
     text-2xl font-medium;
     font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
-  :h2_secondary {
+  .h2_secondary {
     @apply 
     text-xl font-semibold;
     font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
   }
-  :h3_secondary {
+  .h3_secondary {
     @apply 
     text-lg font-semibold;
     font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }:h4_secondary {
+  }.h4_secondary {
     @apply 
     text-base font-medium;
     font-family: "Hanken Grotesk", sans-serif;
@@ -95,32 +95,32 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
-  :list-1{
+  .list-1{
     @apply
     text-3xl font-bold;
     font-family: "Anonymous Pro", monospace;
     font-style: normal;
   }
-  :list-2{
+  .list-2{
     @apply
     text-3xl font-normal;
     font-family: "Bagel Fat One", system-ui;
     font-style: normal;
   }
-  :list-3{
+  .list-3{
     @apply
     text-3xl font-normal;
     font-family: "Barrio", system-ui;
     font-style: normal;
   }
-  :list-4{
+  .list-4{
      @apply
     text-3xl font-normal;
     font-family: "Cabin Sketch", sans-serif;
     font-style: normal;
 
   }
-  :list-5{
+  .list-5{
     @apply
     text-3xl font-normal;
     font-family: "Kranky", serif;
