@@ -9,7 +9,7 @@ export const instructions={
     "8":"You can see the questions that are answered in progress bar",
     "9":"Once when a section is completed you will be able to see how many questions are answered by clicking on section name",
     "10":"Once completion of section question click on proceed to next section to move to next section ",
-    "11":"If timcer gets exausted for a section i.e 10min, you will be automatically directed to next section, and the questions that answered will be recorder and rest will be considered as not-answered"
+    "11":"If timer gets exausted for a section i.e 10min, you will be automatically directed to next section, and the questions that answered will be recorder and rest will be considered as not-answered"
 
 }
 
