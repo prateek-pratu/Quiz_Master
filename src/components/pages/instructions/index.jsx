@@ -19,14 +19,14 @@ const array=["Matehmetics","Sports","GK","Science"]
     setShowCategory(true)
   }
   return (
-    <div className='w-[100vw] px-3 pt-1 pb-5'>
+    <div className='w-full px-3 pt-1 pb-5'>
       <Logo/>
       <div className='flex flex-col items-center gap-2'>
         <h2 className='h2_secondary text-center text-neutral-500'>Hi, {name}</h2>
 
         {showCategory?
-        <div>
-          <h2 className='h2_secondary'>Please select Category to start Quiz</h2>
+        <div className='w-[95vw]'>
+          <h2 className='text-center h2_secondary'>Please select Category to start Quiz</h2>
           <div className='flex justify-center mt-5'>
           <ol>
             {array.map((category,i)=>{
