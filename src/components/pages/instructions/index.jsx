@@ -10,7 +10,7 @@ const name=useSelector(state=>state.name.name)
 const navigate=useNavigate()
 const [checked,setChecked]=useState(false)
 const [showCategory,setShowCategory]=useState(false)
-const array=["Matehmetics","Sports","GK","Science"]
+const category=useSelector(state=>state.category.category)
 
   const handleChecked=()=>{
     setChecked(!checked)
@@ -29,8 +29,8 @@ const array=["Matehmetics","Sports","GK","Science"]
           <h2 className='text-center h2_secondary'>Please select Category to start Quiz</h2>
           <div className='flex justify-center mt-5'>
           <ol>
-            {array.map((category,i)=>{
-            return <li  className={`list-${i+2} transition-all ease-in-out mb-2 hover:scale-125 hover:cursor-pointer `}onClick={()=>navigate(`/quiz/${category}`)}>{category}</li>
+            {category.map((cat,i)=>{
+            return <li  className={`list-${i+2} transition-all ease-in-out mb-2 hover:scale-125 hover:cursor-pointer `}onClick={()=>navigate(`/quiz/${cat.name}`)}>{cat.name}</li>
               })}
           
           </ol>
